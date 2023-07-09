@@ -3,7 +3,7 @@ services:
   - docker
   
 before_install:
-  - docker build -t pratik1707/-react -f Dockerfile.dev . 
+  - docker build -t pratik1707/react -f Dockerfile.dev . 
 
 script:
   - docker run -e CI=true pratik1707/react npm run test  
